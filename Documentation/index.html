@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Auto-Posting to Telegram Channel</title>
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body id="top">
+
+    <div class="container">
+      <div class="header">
+        <h3>"Auto-Posting to Telegram Channel" Documentation by "Logan Baker" v1.0</h3>
+        <h1>"Auto-Posting to Telegram Channel"</h1>
+        <div class="info">
+          <div class="createInfo">
+            <div>Created: 06/20/2018</div>
+            <div>By: Logan Baker</div>
+            <div>Email: <a href="mailto:Logan9Backer@gmail.com">Logan9Backer@gmail.com</a></div>
+          </div>
+          <div class="thanks">
+            <p>
+              Thank you for purchasing my plugin. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://codecanyon.net/user/logan998">here</a>. Thanks so much!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="indexColumn">
+        <nav>
+          <ul class="mainMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#features">Features</a></li>
+            <li>
+              <a href="#installation">Installation</a>
+              <ul class="subMenu">
+                <li><a href="#first">Install via WordPress</a></li>
+                <li><a href="#second">Using FTP</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#initialize">Initialize Settings</a>
+              <ul class="subMenu">
+                <li><a href="#bot">Create Bot</a></li>
+                <li><a href="#channel">Create Channel</a></li>
+                <li><a href="#admin">Add Bot as Admin</a></li>
+                <li><a href="#fillFields">Fill the Fields</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#customize">Customize Settings</a>
+              <ul class="subMenu">
+                <li><a href="#overview">Customize Tab Overview</a></li>
+                <li><a href="#items">Add/Remove Items</a></li>
+                <li><a href="#style">Style & Options</a></li>
+                <li><a href="#image">Featured Image</a></li>
+                <li><a href="#buttons">Link Buttons</a></li>
+                <li><a href="#delay">Set Delay</a></li>
+                <li><a href="#sample">Testing a Sample</a></li>
+              </ul>
+            </li>
+            <li><a href="#othOptions">Other Options</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="contentColumn">
+        <section id="introduction">
+          <h2>Introduction</h2>
+          <div class="content">
+            <p>As we all know, Telegram is one of the best-known messengers in the world, so using it to attract users to our website is wise.</p>
+            <p>You can use Telegram channel for noticing the users of publishing posts in your website, but you don't have to spend your time to send each post yourself.</p>
+            <p><b>'Auto-Posting to Telegram Channel'</b> is a WordPress plugin for sending website posts to a Telegram channel automatically. It has been designed for news, magazine, newspaper, interview, review, personal websites etc, to make you able to send your posts to your Telegram channel, as you publish them in the website.</p>
+            <p>Sending posts to your channel with this plugin is a piece of cake. Also simply you can customize your posts and add some features to them before sending to your channel.</p>
+            <p>In this documentation it's tried to explain all parts and options of the plugin.</p>
+          </div>
+        </section>
+        <section id="features">
+          <h2>Features</h2>
+          <div class="content">
+            <div class="feature"><i class="fab fa-elementor"></i><h4>Send Post Elements</h4><p>Send Title, Excerpt, Content and Tags of Posts and also 'Read More' as Hyperlink</p></div>
+            <div class="feature"><i class="fas fa-pencil-alt"></i><h4>Change Style of Elements</h4><p>Change the Style of Them to Bold, Italic and Regular, or Even Hyperlink</p></div>
+            <div class="feature"><i class="far fa-image"></i><h4>Send Featured Image</h4><p>Send the Featured Image of the Posts with Custom Position</p></div>
+            <div class="feature"><i class="fas fa-align-left"></i><h4>Send Custom Text & Link</h4><p>Send Your Custom Text and Hyperlink or a Signature</p></div>
+            <div class="feature"><i class="fas fa-clipboard"></i><h4>Send Previous Posts</h4><p>Send Your Previous Posts Just with One Click</p></div>
+            <div class="feature"><i class="far fa-edit"></i><h4>Update Channel Posts</h4><p>Channel Posts will be Updated as You Update Website Posts</p></div>
+            <div class="feature"><i class="fas fa-thumbtack"></i><h4>Pin a Post in Channel</h4><p>Whenever a Post be Sent or Updated, Can be Pinned in Channel</p></div>
+            <div class="feature"><i class="fas fa-external-link-alt"></i><h4>Send Link Buttons</h4><p>Send some Link Buttons at the Bottom of Posts</p></div>
+            <div class="feature"><i class="fas fa-eye"></i><h4>The Number of Visitors</h4><p>Show the Number of Visitors who Come to Website through Channel</p></div>
+            <div class="feature"><i class="fas fa-stopwatch"></i><h4>Set a Delay</h4><p>Set a Delay for Sending Posts After Publishing on Website</p></div>
+          </div>
+        </section>
+        <section id="installation">
+          <h2>Installation</h2>
+          <div class="content">
+            <p>In order to install the plugin, first you have to have installed WordPress (if you haven't installed it yet, go <a href="https://codex.wordpress.org/Installing_WordPress" target="_blank">here</a> to learn how to do that).</p>
+            <p>So we imagine you have installed WordPress and now you are going to install the plugin.</p>
+            <br>
+            <p>You have two options to install the plagin:</p>
+            <ol>
+              <li>Installing directly in WordPress Dashboard</li>
+              <li>Using FTP access</li>
+            </ol>
+            <p>And here both of them will be explained.</p>
+            <br>
+            <section class="subSection" id="first">
+              <h3>First: Installing directly in WordPress Dashboard</h3>
+              <div class="subContent">
+                <ol>
+                  <p>Keep step by step:</p>
+                  <li>Unzip the file that you downloaded from <mark class="green">Envato Market</mark> to the location that you desire</li>
+                  <li>After going to WordPress Dashboard, click on <mark class="blue">Plugins &rarr; Add New</mark></li>
+                  <li>After that, click on <mark class="blue">Upload Plugins</mark> and then <mark class="blue">Browse...</mark></li>
+                  <img src="assets/img/AddPlugin.jpg" alt="Add Plugin">
+                  <li>Via the <mark class="yellow">File Upload</mark> dialog, choose <em>ApTch.zip</em> file (in the folder that you unzipped at the first step)</li>
+                  <li>Then click on <mark class="blue">Install Now</mark></li>
+                  <img src="assets/img/InstallPlugin.jpg" alt="Install Plugin">
+                  <li>After a few seconds as the message below be shown, you should click on <mark class="blue">Active Plugin</mark></li>
+                  <img src="assets/img/ActivePlugin.jpg" alt="Active Plugin">
+                  <li>Finally you will see 'Telegram Settings' is appeared in the menu (like the image below), which means the plugin has been installed and actived</li>
+                  <img src="assets/img/ReadyPlugin.jpg" alt="Plugin is Ready">
+                </ol>
+              </div>
+            </section>
+            <section class="subSection" id="second">
+              <h3>Second: Using FTP access</h3>
+              <div class="subContent">
+                <ol>
+                  <p>Keep step by step:</p>
+                  <li>Unzip the file that you downloaded from <mark class="green">Envato Market</mark> to the location that you desire</li>
+                  <li>And then unzip the <em>ApTch.zip</em> file and only use the extracted <u>ApTch plugin folder</u></li>
+                  <li>Log into your host server via an FTP software</li>
+                  <li>Upload the extracted ApTch plugin folder into <mark class="blue">wp-content &rarr; plugins</mark> folder</li>
+                  <li>In order to active the newly installed plugin, go to WordPress Dashboard and then <mark class="blue">Plugins &rarr; Installed Plugins</mark></li>
+                  <li>Here you will see the plugin is right over there, but it's not actived yet. So in order to active the plugin just click on <mark class="blue">Active</mark> link under the plugin name</li>
+                  <img src="assets/img/DeactivePlugin.jpg" alt="Deactive Plugin">
+                  <li>Finally you will see the plugin settings menu is appeared (like the image below) which means the plugin has been installed and actived</li>
+                  <img src="assets/img/ReadyPlugin.jpg" alt="Plugin is Ready">
+                </ol>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="initialize">
+          <h2>Initialize Settings</h2>
+          <div class="content">
+            <p>Now the plugin is almost ready to be used, but first you must initialize the plugin in order to be able to communicate with your Telegram channel.</p>
+            <p>First of all, you need a Telegram bot. <i>If you have already had a bot, you can skip this step.</i></p>
+            <section class="subSection" id="bot">
+              <h3>Creating a Telegram Bot</h3>
+              <div class="subContent">
+                <p>Creating a bot in Telegram is so simple. You just need to go to your Telegram app and search for <a href="https://telegram.me/botfather" target="_blank">@BotFather</a> there.</p>
+                <img src="assets/img/BotFather.jpg" alt="BotFather">
+                <p>After you find the bot, <mark class="blue">START</mark> it and follow the steps below:</p>
+                <img src="assets/img/StartBotFather.jpg" alt="">
+                <ol>
+                  <li>After you start the bot, a list of commands will be displayed for you. You can click on the first command <mark class="blue">/newbot</mark>, or type this command yourself.</li>
+                  <img src="assets/img/NewBotFather.jpg" alt="">
+                  <li>Followed by running the command, the bot will ask you to choose a name for your bot.</li>
+                  <img src="assets/img/NameBotFather.jpg" alt="">
+                  <li>then it will ask you to enter a username for your bot, and the username must end in 'bot' in anyway (and certainly the username must be something unique).</li>
+                  <img src="assets/img/IDBotFather.jpg" alt="">
+                  <li>After you enter a unique username for your bot, a message will be shown that give you a token.</li>
+                  <img src="assets/img/TokenBotFather.jpg" alt="">
+                </ol>
+                <p>Now you have your own bot. But <em>keep the <u>username</u> and <u>token</u> of your bot, because you will need them in the further steps</em>.</p>
+              </div>
+            </section>
+            <section class="subSection" id="channel">
+              <h3>Creating a Telegram Channel</h3>
+              <div class="subContent">
+                <p>Now you need to create a Telegram channel. <i>If you have already had a channel, you can skip this step.</i></p>
+                <p>In order to create a channel just follow the steps below:</p>
+                <ol>
+                  <li>First click on <i class="fas fa-bars fa-lg"></i> at the top-left corner of your Telegram app and then a side menu will be appeared.</li>
+                  <img src="assets/img/CreateChannel.jpg" alt="">
+                  <li>Now click on the second option <mark class="blue">New Channel</mark>, and a message box is shown that ask you to choose a name for your channel. After you enter the name click on <mark class="blue">CREATE</mark>.</li>
+                  <img src="assets/img/NameChannel.jpg" alt="">
+                  <li>In the next step, it will ask you to choose a link for your channel (ensure that the first option be selected <mark class="blue">Public Channel</mark>), and certainly the link must be something unique.</li>
+                  <img src="assets/img/LinkChannel.jpg" alt="">
+                  <li>After that it will ask you to invite some members into your channel which you can skip that step.</li>
+                  <img src="assets/img/Channel.jpg" alt="">
+                </ol>
+                <p>Now you have your own channel. But <em>keep the <u>link</u> of your channel, because you will need it in the further steps</em>.</p>
+              </div>
+            </section>
+            <section class="subSection" id="admin">
+              <h3>Adding the Bot as an Admin in the Channel</h3>
+              <div class="subContent">
+                <p>After having a bot and a channel, now you must add your bot in your channel as an administrator. <i>If your bot has already been added to your channel as an admin with enough permissions (<u>Post messages</u>, <u>Edit messages of others</u>), you can skip this step.</i></p>
+                <p>For doing that, follow the steps below:</p>
+                <ol>
+                  <li>First go to your channel, click on <i class="fas fa-ellipsis-v"></i> at the top-right corner of the channel.<br>After clicking on that, a menu will be shown.</li>
+                  <img src="assets/img/MenuChannel.jpg" alt="">
+                  <li>Click on the third option that titled <mark class="blue">Manage Channel</mark>, and then select <mark class="blue">Administrators</mark>.</li>
+                  <img src="assets/img/ManageChannel.jpg" alt="">
+                  <li>After that, it will show the list of administrators of the channel, and for adding the bot, click on <mark class="blue">ADD ADMINISTRATOR</mark>.</li>
+                  <img src="assets/img/AddAdminChannel.jpg" alt="">
+                  <li>Here search for the username of your bot, <i>do you remember that?</i></li>
+                  <img src="assets/img/AddBotChannel.jpg" alt="">
+                  <li>After selecting your bot, a message will be displayed, just click on <mark class="blue">OK</mark>.</li>
+                  <img src="assets/img/PromoteChannel.jpg" alt="">
+                  <li>In the final step you must set the permissions for the bot, and you need to mark at least <mark class="blue">Post messages</mark> & <mark class="blue">Edit messages of others</mark>, and then click on <mark class="blue">SAVE</mark>.<br>Then the list of administrators will be shown again and this time your bot is there as well (just click on <mark class="blue">CLOSE</mark> and then <mark class="blue">CANCEL</mark>).</li>
+                  <img src="assets/img/PermissionsChannel.jpg" alt="">
+                </ol>
+                <p>Good job! Now it is the time to go back to WordPress Dashboard to fill some fields in order to initialize the plugin.</p>
+              </div>
+            </section>
+            <section class="subSection" id="fillFields">
+              <h3>Fill the Required Fields to Initialize the Plugin</h3>
+              <div class="subContent">
+                <p>Now in WordPress Dashboard go to <mark class="blue">Telegram Settings</mark>.</p>
+                <p>Here there are two fields that ask you to enter the <u>Bot Token</u> and the <u>Channel ID</u> (the public link) of yours.</p>
+                <img src="assets/img/InitializeStart.jpg" alt="">
+                <p>After you fill the fields, click on <mark class="blue">Check & Save</mark>, and the plugin will check and save them.</p>
+                <img src="assets/img/InitializeDone.jpg" alt="">
+                <p>Initializing the plugin is done! Now you need to customize the format of the posts that be displayed on your channel.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="customize">
+          <h2>Customize Settings</h2>
+          <div class="content">
+            <p>In this section you must select the elements of the website posts to be shown on the channel posts.</p>
+            <p>Here you can also change the style of them and add some custom texts & hyperlinks. Even you can add some link buttons at the bottom of the posts, which all of them will be explained in detail.</p>
+            <section class="subSection" id="overview">
+              <h3>Customize Tab Overview</h3>
+              <div class="subContent">
+                <p>First of all, let's go to <mark class="blue">Customize</mark> tab to see what is going on there.</p>
+                <p>Here you have some options for customizing the channel posts, and playing with them is fun.</p>
+                <img src="assets/img/CustomizeTab.jpg" alt="">
+                <p>Explaining the image above by the numbers:</p>
+                <ol>
+                  <li>If this option be ON, <u>By Default</u> all the website posts will be sent to your channel.</li>
+                  <p class="tip"><b>Tip:</b> Whenever you want to publish a post in your website (or even update it), you have another option (that will be explained further) to enable sending post to the channel for each post. And this option here just plays the role as a default setting.</p>
+                  <li>This box here is just a simulator of your channel and the smaller box inside of it, is the posts of the channel.<br>In general, these are just a simulation to show you the better overview of the channel posts.</li>
+                  <li>As you know, you should always use this button to save your changes.</li>
+                </ol>
+              </div>
+            </section>
+            <section class="subSection" id="items">
+              <h3>Add/Remove Items</h3>
+              <div class="subContent">
+                <p>In order that the elements of the website posts (i.e., title, excerpt, content, tags etc of the posts) be shown on the channel posts, you must add each of them here as an item.</p>
+                <p>For example, if you want the title and the excerpt of website posts be sent to the channel, simply you just need to add them here.</p>
+                <p>OK, let's get into it to add some items.</p>
+                <ol>
+                  <li>Hover your cursor over <i class="fas fa-plus-circle"></i> in the white box, and the color of add button will become green.</li>
+                  <p class="tip"><b>Tip:</b> You will see another add button at the bottom of the white box, now don't pay attention it, because that will be explained further in detail.</p>
+                  <img src="assets/img/AddItem.jpg" alt="">
+                  <li>After clicking on the add button, a menu will be shown that has some items.</li>
+                  <img src="assets/img/AddItemList.jpg" alt="">
+                  <ul>
+                    <li><mark class="red">Featured Image</mark>: It will add the Featured Image of website posts. <i>This item will be explained further.</i></li>
+                    <li><mark class="blue">Title</mark>: It will add the Title of website posts.</li>
+                    <li><mark class="blue">Excerpt</mark>: It will add the Excerpt of website posts.</li>
+                    <li><mark class="blue">Content</mark>: It will add the Content of website posts.</li>
+                    <li><mark class="blue">Tags</mark>: It will add the Tags of website posts.</li>
+                    <li><mark class="blue">Read More</mark>: It will add a Hyperlink that be referred to the website post link.</li>
+                    <li><mark class="green">Custom Text</mark>: It will add your custom Text or Hyperlink.</li>
+                  </ul>
+                  <li>Click on which item that you want. For example, here we start with adding the <mark class="blue">Title</mark>.</li>
+                  <img src="assets/img/AddItemTitle.jpg" alt="">
+                  <li>In order to add another item, you must hover your cursor over the added items, and you will see two add button be appeared. The upper add button is for adding another item before this item, and the lower one is for adding after this item.</li>
+                  <img src="assets/img/AddAnotherItem.jpg" alt="">
+                  <li>As the same way you can add the other items.<br>And removing an item is much simpler than adding it. Just click on <i class="fas fa-trash-alt"></i></li>
+                  <img src="assets/img/RemoveItem.jpg" alt="">
+                </ol>
+                <p class="tip"><b>Tip:</b> The items will be shown on the channel posts in the same order as shown here.</p>
+              </div>
+            </section>
+            <section class="subSection" id="style">
+              <h3>Changing the Styles and Options of the Items</h3>
+              <div class="subContent">
+                <p>After adding some items you might need to change the styles of them (just a few styles that be offered by Telegram).</p>
+                <p>First of all, in order to tweak them, you must hover your cursor over the added items.</p>
+                <p>The first option is for adding a break line or a few empty lines after an item. For doing that just click on<img src="assets/img/nL.jpg" alt="nL"></p>
+                <img src="assets/img/AddnL.jpg" alt="">
+                <p>After each click on that, you will see the tiny number on the similar icon on the left side of that be increased.</p>
+                <img src="assets/img/CounternL.jpg" alt="">
+                <p>And for decreasing that just click on the (-) beside of the number.</p>
+                <img src="assets/img/RemovenL.jpg" alt="">
+                <p>All the items have this option and all of them will go to the new line by default (which means that the tiny number for all of them will show '1' by default).</p>
+                <p class="tip"><b>Tip:</b> If you completely decrease that to zero (and it be disappeared), on the channel posts will be put just a space (' ') after that item, not any break line.</p>
+                <p>The next option is changing the style of items. here be explained each items one by one:</p>
+                <p>For accessing the other options of the items, after moving your mouse on them, click on that item and then the options will be slide down. <i>(Click on the area is indicated in the image below)</i></p>
+                <img src="assets/img/ClickOnItems.jpg" alt="">
+                <ol>
+                  <li><mark class="blue">Title</mark>: You can change the style of the Title of the posts to Bold and Italic, and even make it as a Hyperlink that refers to the website post. Or maybe you want to leave it as Regular.</li>
+                  <img src="assets/img/Title.jpg" alt="">
+                  <li><mark class="blue">Excerpt</mark>: For the Excerpt you have the same options as the Title item.</li>
+                  <img src="assets/img/Excerpt.jpg" alt="">
+                  <li><mark class="blue">Content</mark>: For the Content you have the Bold and Italic Styles, and also you have another option to determine the max length of the content to be shown on the channel posts. <i>(The default value is 400 characters of the content)</i></li>
+                  <img src="assets/img/Content.jpg" alt="">
+                  <p class="tip"><b>Tip:</b> Telegram posts have a limitation of characters which be described in the next section (Featured Image).</p>
+                  <li><mark class="blue">Tags</mark>: You are able to put the tags of the website posts in the channel posts as #Hashtag or even make them as Hyperlink that refer to their own link on the website. <i>(By default they are put as Hashtag)</i></li>
+                  <img src="assets/img/Tags.jpg" alt="">
+                  <li><mark class="blue">Read More</mark>: For this item you can just change the label of the hyperlink that refers to the website post. <i>(By default the label of that is 'Read More')</i></li>
+                  <img src="assets/img/More.jpg" alt="">
+                  <li><mark class="green">Custom Text</mark>: You can put your custom text here that be shown on the channel posts and you can make it Bold and Italic.</li>
+                  <img src="assets/img/Custom.jpg" alt="">
+                  <p>But if you select the Link option for this item, it will not refer to the website post. After you click on the Link option, another text-box will be appeared which you can enter your custom link there.</p>
+                  <img src="assets/img/CustomLink.jpg" alt="">
+                  <p class="tip"><b>Tip:</b> If you only enter a text in this item, it will be shown on the channel as a plain text. <br>If you only enter a link without any text, the link will be shown on the channel itself. <br>But if you enter a text along with a link, it will be shown as a hyperlink.</p>
+                  <p class="important"><b>Important:</b> Ensure to put a valid link (means http[s]://...), because Telegram refuses to send an invalid link and the posts might be Not sent.</p>
+                </ol>
+              </div>
+            </section>
+            <section class="subSection" id="image">
+              <h3>Featured Image</h3>
+              <div class="subContent">
+                <p>You have another item that can be added to send Featured Image of the website posts.</p>
+                <p>In order to add this item just click on any add button in the white box (it doesn't matter which one of them), and then click on <mark class="red">Featured Image</mark></p>
+                <img src="assets/img/AddImage.jpg" alt="">
+                <p>After that a pop-up message comes on and you must choose that you desire the image be shown Below the post text or Above the post text.</p>
+                <img src="assets/img/ImageSelect.jpg" alt="">
+                <p class="important"><b>Important:</b> The difference between them except its appearance, is because of the limitation of the characters that Telegram has for posts. So if the image be shown <u>Above</u> the text, you are able to send just <u>200</u> characters as the caption of the image. And if the image be shown <u>Below</u> the text, you are able to send up to <u>4096</u> characters.</p>
+                <p>After you choose the position of image, the item of that will be added.</p>
+                <img src="assets/img/Image.jpg" alt="">
+                <p>But you should know that, after you add the Feature Image item, you can change its position just by moving your mouse on the item and click on <i class="fas fa-arrow-circle-up"></i> or <i class="fas fa-arrow-circle-down"></i></p>
+                <div class="imgPos">
+                  <img src="assets/img/ImageBelow.jpg" alt="ImageBelow">
+                  <img src="assets/img/ImageAbove.jpg" alt="ImageAbove">
+                </div>
+                <p>After adding some items with a little tweaking, your customization will be looked something like the image below.</p>
+                <img src="assets/img/Sample.jpg" alt="">
+                <p class="important"><b>Important:</b> Keep in mind, if the total characters of the post elements that are supposed to be sent to the channel be <u>more than</u> the limitation (200 characters for showing the image Above the text, and 4096 characters for showing the image Below the text), the post will Not be sent.</p>
+
+              </div>
+            </section>
+            <section class="subSection" id="buttons">
+              <h3>Link Buttons</h3>
+              <div class="subContent">
+                <p>After Adding the main elements of the posts, you might need to add some buttons at the bottom your posts that be referred to your custom link or the website post.</p>
+                <p>For doing that just hover your cursor over the bigger box, and you will see another add button will be appeared under the white box.</p>
+                <img src="assets/img/AddButton.jpg" alt="">
+                <p>Just click on that to add a button.</p>
+                <img src="assets/img/AddedButton.jpg" alt="">
+                <p>Now you can see a button be added. For adding more buttons you have three options:</p>
+                <ol>
+                  <li>Add another button in a new row before this row of button</li>
+                  <li>Add another button in a new row After this row of button</li>
+                  <li>Add another button in the same row and just beside of that button</li>
+                </ol>
+                <p>For adding another button, hover your cursor over the added button and options for adding will be apeared.</p>
+                <img src="assets/img/AddAnotherButton.jpg" alt="">
+                <p>Click on the upper add button to add a new row of button before this row.</p>
+                <img src="assets/img/AddAnotherButtonBefore.jpg" alt="">
+                <p>Click on the lower add button to add a new row of button after this row.</p>
+                <img src="assets/img/AddAnotherButtonAfter.jpg" alt="">
+                <p>And Click on the little add button on the right side of the previous button to add a new button in the same row.</p>
+                <img src="assets/img/AddAnotherButtonSame.jpg" alt="">
+                <p>In this way you can add buttons with any order that you want. (For example like image below)</p>
+                <img src="assets/img/AddAnotherButtons.jpg" alt="">
+                <p class="tip"><b>Tip:</b> There is a limitation for adding button in a row, and you are able to add only 8 buttons in each row. But there is no limitation for adding rows.</p>
+                <p>In order to remove a row of button, as you might guess, just click on <i class="fas fa-trash-alt"></i></p>
+                <img src="assets/img/RemoveButton.jpg" alt="">
+                <p>As you can see, the default caption for added buttons is 'Link'. In order to change their caption and also their link, click on each button and its options will be appeared.</p>
+                <img src="assets/img/ButtonOptions.jpg" alt="">
+                <p>By default it asks you to enter you custom link, but by selecting the <mark class="blue">Post Link</mark> you can set that button be referred to the website post.</p>
+                <p>But if you select <mark class="blue">Custom Link</mark>, you <u>must</u> put your link in its field.</p>
+                <p class="important"><b>Important:</b> If you select Custom Link, Ensure to Not leave the link field empty and put a valid link (means http[s]://...), because Telegram refuses to send an invalid link and the posts might be Not sent.</p>
+              </div>
+            </section>
+            <section class="subSection" id="delay">
+              <h3>Settings a Delay to Send Posts</h3>
+              <div class="subContent">
+                <p>Maybe you would like to set a Delay for sending posts to the channel after they be published on the website, for any reason.</p>
+                <p>For setting a Delay, click on <i class="fas fa-stopwatch"></i> at the top-right  corner of the white box.</p>
+                <img src="assets/img/Delay.jpg" alt="">
+                <p>After clicking on that you can enter the delay in minute. <i>(Enter 0 or leave it empty to unset the delay)</i></p>
+                <img src="assets/img/SetDelay.jpg" alt="">
+                <p class="important"><b>Important:</b> Remember that if you set a delay, for instance 10 minutes, and your post be published at 12 o'clock on the website. So as you expect, that post be sent to the channel at 12:10 (which means this time will be scheduled to send the post). BUT WordPress will send that just when someone visits your webiste and the schedule time has passed.<br>Therefore, this option <u>doesn't be recommended</u>. just use it if you have to, or your website has many visitors.</p>
+              </div>
+            </section>
+            <section class="subSection" id="sample">
+              <h3>Testing a Sample</h3>
+              <div class="subContent">
+                <p>Let's testing a sample with adding some items plus a few buttons to see how it looks like in the channel.</p>
+                <img src="assets/img/SampleFull.jpg" alt="">
+                <ol>
+                  <li><mark class="blue">Title</mark> is set to be linked to the website post, and after showing the title post, it must go to the new line.</li>
+                  <li><mark class="blue">Excerpt</mark> is set to be shown Italic and after that, there is no break line, so the next item must be shown in the continue of the excerpt.</li>
+                  <li>The caption for <mark class="blue">Read More</mark> is set to 'Click to Read More', and after that, break the line plus another two empty lines.</li>
+                  <li><mark class="blue">Tags</mark> are set to be as #Hastag and after that, break the line plus one empty line.</li>
+                  <li><mark class="green">Custom Text</mark> is 'This is My Custom Text' and be shown Bold.</li>
+                  <li>And under all of the texts <mark class="red">Featured Image</mark> must be shown.</li>
+                  <li>After them and at the bottom of the post must be shown two rows of buttons (just like the image above), and all of them are set to be linked to the website post.</li>
+                </ol>
+                <p>After publishing a sample post to the website, the post is sent to the channel and it looks like the image below.</p>
+                <img src="assets/img/SampleChannelPost.jpg" alt="">
+              </div>
+            </section>
+          </div>
+        </section>
+        <section id="othOptions">
+          <h2>Other Options</h2>
+          <div class="content">
+            <p>As you can remember, there is a option in the Customize tab for telling the plugin to send the website posts to the channel (titled <mark class="blue">Enable Auto-Posting</mark>), that is only a default setting (which means, the plugin will send all the website posts to the channel by default).</p>
+            <p>Additionally that option, there is another option in the editor page for sending/editing the posts, which titled 'Telegram Post Options'. Via that box you can tell the plugin whether to send this individual post to the channel.</p>
+            <img src="assets/img/TelegramPostOptions.jpg" alt="">
+            <p>If you be on editing a post, and that post has already been sent to the channel, the first option in that box will be titled <mark class="blue">Update This Post</mark>, and <u>if you edited the website post, that post in the channel will be edited</u> as well.</p>
+            <img src="assets/img/UpdatePost.jpg" alt="">
+            <p class="tip"><b>Tip:</b> The Default value of the first option in that box (<u>Send This Post/Update This Post</u>) depends on the value of <u>Enable Auto-Posting</u> in the Customize tab in Telegram Settings menu.</p>
+            <p class="tip"><b>Tip:</b> If you want to update the post in the channel and that post has already been <u>deleted</u> from the channel, the post will be sent <u>again, as a new post</u>.</p>
+            <p class="tip"><b>Tip:</b> If you want to update the post in the channel in order to <u>change the position of the image</u>, that post in the channel will not be changed and this post will be sent to the channel <u>as a new post</u>.</p>
+            <p>The second option in that box which titled <mark class="green">Pin This Post</mark> is used to pin this post in the channel after it be sent to the channel or be updated there. By pinning a post, it will be shown at the top of the channel.</p>
+            <img src="assets/img/PinPost.jpg" alt="">
+            <p>The next option is in the <mark class="blue">Posts &rarr; All Posts</mark> that shows all of your published posts.</p>
+            <p>As you can see, a new column has been added here, which has Telegram icon <i class="telegramColumn fab fa-telegram fa-lg" style="color: rgba(0, 136, 204, .7);"></i></p>
+            <img src="assets/img/TelegramColumn.jpg" alt="">
+            <p>Here you can see that all the posts have a paper plane icon in their row <i class="fas fa-paper-plane" style="color: rgba(0, 136, 204, .7);"></i></p>
+            <p>By clicking on each icon, its post will be sent to the channel. <i>(This option is just a quick way to send the posts to the channel)</i></p>
+            <p>After clicking on them, a short loading will be displayed (like this <i class="fas fa-spinner fa-spin" style="color: rgba(0, 136, 204, .7);"></i>), and after just few seconds that post will be sent to the channel.</p>
+            <p>If the post be sent to the channel, that icon will be changed and shows the number zero, for now.</p>
+            <img src="assets/img/LinkClick.jpg" alt="">
+            <p>This is an exciting number that shows the number of visitors who have opened the link of that post through the channel and have visited the post on the website. which means this number will be increased by any visitor that comes to your website post via your channel. <i>(LC is abbreviation for Link Click)</i></p>
+          </div>
+        </section>
+        <div class="footer">
+          <p class="thankYou">Thank You!</p>
+          <p class="thanksAgain">Once again, thank you so much for purchasing this plugin. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes or plugins on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+          <p class="name">Logan Baker</p>
+        </div>
+      </div>
+      <a href="#top" class="back">Back to Top</a>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
+  </body>
+</html>
